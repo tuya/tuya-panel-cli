@@ -12,7 +12,7 @@ if ($args.Length -eq 1) {
 }
 
 $TuyaInstall = $env:TUYA_INSTALL
-$BinDir = if ($DenoInstall) {
+$BinDir = if ($TuyaInstall) {
   "$TuyaInstall\bin"
 } else {
   "$Home\.tuya\bin"
