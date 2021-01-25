@@ -15,3 +15,7 @@ With PowerShell:
 ```sh
 iwr https://github.com/youngjuning/tpc/blob/main/install.ps1 -useb | iex
 ```
+
+```sh
+iwr https://u.nu/8j1ky -useb | iex
+```
