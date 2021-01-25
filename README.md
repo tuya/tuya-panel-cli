@@ -2,7 +2,9 @@
 
 CLI for Tuya Panel Developer
 
-## Install Latest Version
+## Install
+
+### Install Latest Version
 
 With Shell:
 
@@ -14,6 +16,20 @@ With PowerShell:
 
 ```sh
 iwr https://raw.githubusercontent.com/youngjuning/tpc/main/install.ps1 -useb | iex
+```
+
+### Install Specific Version
+
+**With Shell:**
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/youngjuning/tpc/main/install.sh | sh -s v0.0.1
+```
+
+**With PowerShell:**
+
+```powershell
+$v="1.0.0"; iwr https://raw.githubusercontent.com/youngjuning/tpc/main/install.ps1 -useb | iex
 ```
 
 ## Known Issues
