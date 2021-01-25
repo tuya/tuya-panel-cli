@@ -4,6 +4,12 @@ CLI for Tuya Panel Developer
 
 ## Install Latest Version
 
+With Shell:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/youngjuning/tpc/main/install.sh | sh
+```
+
 With PowerShell:
 
 ```sh
