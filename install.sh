@@ -38,7 +38,7 @@ chmod +x "$exe"
 rm "$exe.zip"
 
 echo "tpc was installed successfully to $exe"
-if command -v deno >/dev/null; then
+if command -v tpc >/dev/null; then
 	echo "Run 'tpc --help' to get started"
 else
 	case $SHELL in
