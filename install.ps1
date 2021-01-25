@@ -19,7 +19,7 @@ $BinDir = if ($TuyaInstall) {
 }
 
 $TpcZip = "$BinDir\tpc.zip"
-$TpcExe = "$BinDir\tpc.exe"
+$TpcExe = "$BinDir\tpc"
 $Target = 'x86_64-pc-windows-msvc'
 
 # GitHub requires TLS 1.2
