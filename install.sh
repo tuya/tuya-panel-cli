@@ -45,8 +45,9 @@ else
 	/bin/zsh) shell_profile=".zshrc" ;;
 	*) shell_profile=".bash_profile" ;;
 	esac
-	echo "Manually add the directory to your \$HOME/$shell_profile (or similar)"
-	echo "  export TUYA_INSTALL=\"$tuya_install\""
-	echo "  export PATH=\"\$TUYA_INSTALL/bin:\$PATH\""
-	echo "Run '$exe --help' to get started"
+	echo "Manually add the directory to your $HOME/$shell_profile (or similar)"
+	echo "# Tuya" >> $HOME/$shell_profile
+	echo "export TUYA_INSTALL=\"$tuya_install\"" >> $HOME/$shell_profile
+	echo "export PATH=\"\$TUYA_INSTALL/bin:\$PATH\"" >> $HOME/$shell_profile
+	echo "Run 'tpc --help' to get started"
 fi
