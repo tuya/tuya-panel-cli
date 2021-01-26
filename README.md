@@ -40,7 +40,7 @@ The program [`unzip`](https://linux.die.net/man/1/unzip) is a requirement for th
 
 ```sh
 $ curl -fsSL https://raw.githubusercontent.com/youngjuning/tpc/main/install.sh | sh
-Error: unzip is required to install Deno (see: https://github.com/denoland/deno_install#unzip-is-required).
+Error: unzip is required to install Deno (see: https://github.com/youngjuning/tpc#unzip-is-required).
 ```
 
 **When does this issue occur?**
