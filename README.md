@@ -6,13 +6,13 @@ CLI for Tuya Panel Developer
 
 ### Install Latest Version
 
-With Shell:
+**With Shell:**
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/youngjuning/tpc/main/install.sh | sh
 ```
 
-With PowerShell:
+**With PowerShell:**
 
 ```sh
 iwr https://raw.githubusercontent.com/youngjuning/tpc/main/install.ps1 -useb | iex
@@ -30,6 +30,14 @@ curl -fsSL https://raw.githubusercontent.com/youngjuning/tpc/main/install.sh | s
 
 ```powershell
 $v="1.0.0"; iwr https://raw.githubusercontent.com/youngjuning/tpc/main/install.ps1 -useb | iex
+```
+
+## Install via Package Manager
+
+**With [Homebrew](https://github.com/youngjuning/homebrew-tap#tpc):**
+
+```sh
+brew install youngjuning/tap/tpc
 ```
 
 ## Known Issues
