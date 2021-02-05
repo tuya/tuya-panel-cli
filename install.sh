@@ -23,8 +23,8 @@ if [ $# -eq 0 ]; then
 else
 	tpc_uri="https://github.com/youngjuning/tpc/releases/download/${1}/tpc-${target}.zip"
 fi
-tuya_install="${TUYA_INSTALL:-$HOME/.tuya}"
-bin_dir="$tuya_install/bin"
+tpc_install="${TPC_INSTALL:-$HOME/.tpc}"
+bin_dir="$tpc_install/bin"
 exe="$bin_dir/tpc"
 
 if [ ! -d "$bin_dir" ]; then
@@ -44,9 +44,9 @@ else
 	/bin/zsh) shell_profile=".zshrc" ;;
 	*) shell_profile=".bash_profile" ;;
 	esac
-	echo "# Tuya" >> $HOME/$shell_profile
-	echo "export TUYA_INSTALL=\"$tuya_install\"" >> $HOME/$shell_profile
-	echo "export PATH=\"\$TUYA_INSTALL/bin:\$PATH\"" >> $HOME/$shell_profile
+	echo "# Tpc" >> $HOME/$shell_profile
+	echo "export TPC_INSTALL=\"$tpc_install\"" >> $HOME/$shell_profile
+	echo "export PATH=\"\$TPC_INSTALL/bin:\$PATH\"" >> $HOME/$shell_profile
 	source $HOME/$shell_profile
 	echo "Run 'tpc --help' to get started"
 fi
