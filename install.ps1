@@ -11,11 +11,11 @@ if ($args.Length -eq 1) {
   $Version = $args.Get(0)
 }
 
-$TuyaInstall = $env:TUYA_INSTALL
-$BinDir = if ($TuyaInstall) {
-  "$TuyaInstall\bin"
+$TpcInstall = $env:TPC_INSTALL
+$BinDir = if ($TpcInstall) {
+  "$TpcInstall\bin"
 } else {
-  "$Home\.tuya\bin"
+  "$Home\.tpc\bin"
 }
 
 $TpcZip = "$BinDir\tpc.zip"
