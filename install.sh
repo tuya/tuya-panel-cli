@@ -47,6 +47,6 @@ else
 	echo "Manually add the directory to your \$HOME/$shell_profile (or similar)"
 	echo "  export TPC_INSTALL=\"$tpc_install\""
 	echo "  export PATH=\"\$TPC_INSTALL/bin:\$PATH\""
-	echo "Run source $HOME/$shell_profile"
+	echo "Run 'source $HOME/$shell_profile' to restart"
 	echo "Run '$exe --help' to get started"
 fi
