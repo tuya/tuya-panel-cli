@@ -47,6 +47,5 @@ else
 	echo "# Tpc" >> $HOME/$shell_profile
 	echo "export TPC_INSTALL=\"$tpc_install\"" >> $HOME/$shell_profile
 	echo "export PATH=\"\$TPC_INSTALL/bin:\$PATH\"" >> $HOME/$shell_profile
-	source $HOME/$shell_profile
 	echo "Run 'tpc --help' to get started"
 fi
