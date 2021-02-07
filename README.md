@@ -4,6 +4,8 @@ CLI for Tuya Panel Developer
 
 ## Install
 
+> If you have another tpc. Please uninstall it firstly.
+
 ### Install Latest Version
 
 **With Shell:**
