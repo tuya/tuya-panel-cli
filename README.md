@@ -32,12 +32,10 @@ curl -fsSL https://raw.githubusercontent.com/youngjuning/tpc/main/install.sh | s
 $v="1.0.0"; iwr https://raw.githubusercontent.com/youngjuning/tpc/main/install.ps1 -useb | iex
 ```
 
-## Install via Package Manager
-
-**With [Homebrew](https://github.com/youngjuning/homebrew-tap#tpc):**
+## Upgrade
 
 ```sh
-brew install youngjuning/tap/tpc
+tpc upgrade
 ```
 
 ## Known Issues
