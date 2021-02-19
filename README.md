@@ -35,7 +35,7 @@ $v="1.0.0"; iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/insta
 ## Upgrade
 
 ```sh
-tuya-panel-kit upgrade
+tuya-panel-cli upgrade
 ```
 
 ## Known Issues

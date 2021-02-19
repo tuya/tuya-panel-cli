@@ -15,20 +15,20 @@ $TpcInstall = $env:TPC_INSTALL
 $BinDir = if ($TpcInstall) {
   "$TpcInstall\bin"
 } else {
-  "$Home\.tuya-panel-kit\bin"
+  "$Home\.tuya-panel-cli\bin"
 }
 
-$TpcZip = "$BinDir\tuya-panel-kit.zip"
-$TpcExe = "$BinDir\tuya-panel-kit.exe"
+$TpcZip = "$BinDir\tuya-panel-cli.zip"
+$TpcExe = "$BinDir\tuya-panel-cli.exe"
 $Target = 'x86_64-pc-windows-msvc'
 
 # GitHub requires TLS 1.2
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $TpcUri = if (!$Version) {
-  "https://github.com/youngjuning/tuya-panel-kit/releases/latest/download/tuya-panel-kit-${Target}.zip"
+  "https://github.com/tuya/tuya-panel-cli/releases/latest/download/tuya-panel-cli-${Target}.zip"
 } else {
-  "https://github.com/youngjuning/tuya-panel-kit/releases/download/${Version}/tuya-panel-kit-${Target}.zip"
+  "https://github.com/tuya/tuya-panel-cli/releases/download/${Version}/tuya-panel-cli-${Target}.zip"
 }
 
 if (!(Test-Path $BinDir)) {
@@ -57,4 +57,4 @@ if (!(";$Path;".ToLower() -like "*;$BinDir;*".ToLower())) {
 }
 
 Write-Output "Tpc was installed successfully to $TpcExe"
-Write-Output "Run 'tuya-panel-kit --help' to get started"
+Write-Output "Run 'tuya-panel-cli --help' to get started"

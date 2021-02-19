@@ -5,7 +5,7 @@
 set -e
 
 if ! command -v unzip >/dev/null; then
-	echo "Error: unzip is required to install tuya-panel-kit (see: https://github.com/youngjuning/tuya-panel-kit#unzip-is-required)." 1>&2
+	echo "Error: unzip is required to install tuya-panel-cli (see: https://github.com/tuya/tuya-panel-cli#unzip-is-required)." 1>&2
 	exit 1
 fi
 
@@ -19,13 +19,13 @@ else
 fi
 
 if [ $# -eq 0 ]; then
-	tpc_uri="https://github.com/youngjuning/tuya-panel-kit/releases/latest/download/tuya-panel-kit-${target}.zip"
+	tpc_uri="https://github.com/tuya/tuya-panel-cli/releases/latest/download/tuya-panel-cli-${target}.zip"
 else
-	tpc_uri="https://github.com/youngjuning/tuya-panel-kit/releases/download/${1}/tuya-panel-kit-${target}.zip"
+	tpc_uri="https://github.com/tuya/tuya-panel-cli/releases/download/${1}/tuya-panel-cli-${target}.zip"
 fi
-tpc_install="${TPC_INSTALL:-$HOME/.tuya-panel-kit}"
+tpc_install="${TPC_INSTALL:-$HOME/.tuya-panel-cli}"
 bin_dir="$tpc_install/bin"
-exe="$bin_dir/tuya-panel-kit"
+exe="$bin_dir/tuya-panel-cli"
 
 if [ ! -d "$bin_dir" ]; then
 	mkdir -p "$bin_dir"
@@ -36,9 +36,9 @@ unzip -d "$bin_dir" -o "$exe.zip"
 chmod +x "$exe"
 rm "$exe.zip"
 
-echo "tuya-panel-kit was installed successfully to $exe"
-if command -v tuya-panel-kit >/dev/null; then
-	echo "Run 'tuya-panel-kit --help' to get started"
+echo "tuya-panel-cli was installed successfully to $exe"
+if command -v tuya-panel-cli >/dev/null; then
+	echo "Run 'tuya-panel-cli --help' to get started"
 else
 	case $SHELL in
 	/bin/zsh) shell_profile=".zshrc" ;;
