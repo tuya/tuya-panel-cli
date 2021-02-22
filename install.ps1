@@ -37,26 +37,24 @@ if (!(Test-Path $BinDir)) {
 
 Invoke-WebRequest $TpcUri -OutFile $TpcZip -UseBasicParsing
 
-if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
-  Expand-Archive $TpcZip -Destination $BinDir -Force
-} else {
+# if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
+#   Expand-Archive $TpcZip -Destination $BinDir -Force
+# } else {
 #   if (Test-Path $TpcExe) {
 #     Remove-Item $TpcExe
 #   }
-  Add-Type -AssemblyName System.IO.Compression.FileSystem
-  [IO.Compression.ZipFile]::ExtractToDirectory($TpcZip, $BinDir)
-}
+#   Add-Type -AssemblyName System.IO.Compression.FileSystem
+#   [IO.Compression.ZipFile]::ExtractToDirectory($TpcZip, $BinDir)
+# }
 
 # Remove-Item $TpcZip
 
-Write-Output "$TpcZip"
-
-$User = [EnvironmentVariableTarget]::User
-$Path = [Environment]::GetEnvironmentVariable('Path', $User)
-if (!(";$Path;".ToLower() -like "*;$BinDir;*".ToLower())) {
-  [Environment]::SetEnvironmentVariable('Path', "$Path;$BinDir", $User)
-  $Env:Path += ";$BinDir"
-}
+# $User = [EnvironmentVariableTarget]::User
+# $Path = [Environment]::GetEnvironmentVariable('Path', $User)
+# if (!(";$Path;".ToLower() -like "*;$BinDir;*".ToLower())) {
+#   [Environment]::SetEnvironmentVariable('Path', "$Path;$BinDir", $User)
+#   $Env:Path += ";$BinDir"
+# }
 
 Write-Output "Tpc was installed successfully to $TpcExe"
 Write-Output "Run 'tuya-panel-cli --help' to get started"
