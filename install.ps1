@@ -41,7 +41,7 @@ if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
   Expand-Archive $TpcZip -Destination $BinDir -Force
 } else {
   if (Test-Path $TpcExe) {
-    Remove-Item $TpcExe
+    Remove-Item -force $TpcExe
   }
   Add-Type -AssemblyName System.IO.Compression.FileSystem
   [IO.Compression.ZipFile]::ExtractToDirectory($TpcZip, $BinDir)
