@@ -47,7 +47,9 @@ if (Get-Command Expand-Archive -ErrorAction SilentlyContinue) {
   [IO.Compression.ZipFile]::ExtractToDirectory($TpcZip, $BinDir)
 }
 
-Remove-Item $TpcZip
+# Remove-Item $TpcZip
+
+Write-Output "$TpcZip"
 
 $User = [EnvironmentVariableTarget]::User
 $Path = [Environment]::GetEnvironmentVariable('Path', $User)
