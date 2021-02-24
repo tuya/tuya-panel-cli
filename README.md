@@ -2,6 +2,8 @@
 
 CLI for Tuya Panel Developer
 
+English | [简体中文](./README-zh_CN.md)
+
 ## Install
 
 ### Install Latest Version
@@ -62,3 +64,14 @@ During the `install.sh` process, `unzip` is used to extract the zip archive.
 **How can this issue be fixed?**
 
 You can install unzip via `brew install unzip` on MacOS or `apt-get install unzip -y` on Linux.
+
+## Support
+
+- [Tuya Developer Center](https://developer.tuya.com/en/)
+- [Tuya Smart Help Center](https://support.tuya.com/en/help)
+- [Technical Support Tickets](https://iot.tuya.com/council/)
+- [Support Docs](https://panel-docs.tuyaus.com/)
+
+## License
+
+[MIT License](./LICENSE)
