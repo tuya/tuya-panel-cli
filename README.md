@@ -38,6 +38,12 @@ $v="1.0.0"; iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/insta
 tuya-panel-cli upgrade
 ```
 
+## Install via Homebrew
+
+```sh
+brew install youngjuning/tap/tuya-panel-cli
+```
+
 ## Known Issues
 
 ### unzip is required
