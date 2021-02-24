@@ -56,5 +56,5 @@ if (!(";$Path;".ToLower() -like "*;$BinDir;*".ToLower())) {
   $Env:Path += ";$BinDir"
 }
 
-Write-Output "Tpc was installed successfully to $TpcExe"
+Write-Output "tuya-panel-cli was installed successfully to $TpcExe"
 Write-Output "Run 'tuya-panel-cli --help' to get started"
