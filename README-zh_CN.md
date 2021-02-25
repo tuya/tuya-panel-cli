@@ -93,7 +93,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 2、解压到任意位置，比如 `C:\tuya-panel-cli` 目录下
 
-![](https://images.tuyacn.com/fe-static/docs/img/3c1a1ce2-3b41-498d-ae67-36fec954569e.png)
+![](https://images.tuyacn.com/fe-static/docs/img/56b1bd45-ea79-4bca-8e64-0f6fbae645fa.png)
 
 3、设置环境变量
 
