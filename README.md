@@ -91,7 +91,7 @@ If the above command returns `5` or above, there is no problem, otherwise you ne
 
 2、Unzip executable to any place like `C:\tuya-panel-cli`
 
-![](https://images.tuyacn.com/fe-static/docs/img/3c1a1ce2-3b41-498d-ae67-36fec954569e.png)
+![](https://images.tuyacn.com/fe-static/docs/img/56b1bd45-ea79-4bca-8e64-0f6fbae645fa.png)
 
 3、Set environment variables
 
