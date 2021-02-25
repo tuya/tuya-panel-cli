@@ -66,6 +66,43 @@ During the `install.sh` process, `unzip` is used to extract the zip archive.
 
 You can install unzip via `brew install unzip` on MacOS or `apt-get install unzip -y` on Linux.
 
+### iwr 无法被识别（Windows）
+
+**确认操作系统环境**
+
+我们推荐使用 Windows 10 操作系统，更老的 Windows 也许可以，但会增加不必要的麻烦。有两个办法可以解决。
+
+**升级 PowerShell 版本（推荐）**
+
+PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的主要命令行界面。以下操作继续在上面打开的命令行界面进行：
+
+- 在 Powershell 命令行输入 `$PSVersionTable.PSVersion.Major` 检查版本
+
+上面的命令返回为 5 或者以上就没问题，否则需要下载并安装：
+
+- [.NET Framework 4.5 or later](https://www.microsoft.com/net/download)
+- [Windows Management Framework 5.x](https://aka.ms/wmf5download)
+
+**手动安装配置（简单）**
+
+> 注意：手动安装后 `tuya-panel-cli upgrade` 命令是无法使用的，所以还是推荐第一种办法。
+
+1、在 [tuya-panel-cli/releases/latest](https://github.com/tuya/tuya-panel-cli/releases/latest) 界面安装最新的可执行文件压缩包 `tuya-panel-cli-x86_64-pc-windows-msvc.zip`
+
+![](https://images.tuyacn.com/fe-static/docs/img/aff7b378-c024-4358-9ca7-d3616df24890.png)
+
+2、解压到任意位置，比如 `C:\tuya-panel-cli` 目录下
+
+![](https://images.tuyacn.com/fe-static/docs/img/3c1a1ce2-3b41-498d-ae67-36fec954569e.png)
+
+3、设置环境变量
+
+把可执行文件的安装目录，比如我们刚设置的 `C:\tuya-panel-cli` 添加到用户环境变量 `Path` 中：
+
+![](https://images.tuyacn.com/fe-static/docs/img/7af7585a-d2bc-4ea6-9ac5-5f5073ac24a4.png)
+
+4、重新打开 Powershell 命令行输入 `tuya-panel-cli --version` 验证
+
 ## 技术支持
 
 - 开发者中心：https://developer.tuya.com/cn/
