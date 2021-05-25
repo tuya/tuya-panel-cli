@@ -11,13 +11,13 @@
 **Shell下安装:**
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.sh | sh
+curl -fsSL https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.sh | sh
 ```
 
 **PowerShell下安装:**
 
 ```sh
-iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.ps1 -useb | iex
+iwr https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.ps1 -useb | iex
 ```
 
 ### 安装指定版本
@@ -26,13 +26,13 @@ iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.ps1 -useb
 **Shell下安装:**
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.sh | sh -s v0.0.1
+curl -fsSL https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.sh | sh -s v0.0.1
 ```
 
 **PowerShell下安装:**
 
 ```powershell
-$v="1.0.0"; iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.ps1 -useb | iex
+$v="1.0.0"; iwr https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.ps1 -useb | iex
 ```
 
 ## 升级
