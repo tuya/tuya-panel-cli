@@ -11,13 +11,13 @@ English | [简体中文](./README-zh_CN.md)
 **With Shell:**
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.sh | sh
+curl -fsSL https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.sh | sh
 ```
 
 **With PowerShell:**
 
 ```sh
-iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.ps1 -useb | iex
+iwr https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.ps1 -useb | iex
 ```
 
 ### Install Specific Version
@@ -25,13 +25,13 @@ iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.ps1 -useb
 **With Shell:**
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.sh | sh -s v0.0.1
+curl -fsSL https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.sh | sh -s v0.0.1
 ```
 
 **With PowerShell:**
 
 ```powershell
-$v="1.0.0"; iwr https://raw.githubusercontent.com/tuya/tuya-panel-cli/main/install.ps1 -useb | iex
+$v="1.0.0"; iwr https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.ps1 -useb | iex
 ```
 
 ## Upgrade
