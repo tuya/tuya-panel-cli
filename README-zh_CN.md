@@ -68,11 +68,11 @@ You can install unzip via `brew install unzip` on MacOS or `apt-get install unzi
 
 ### iwr 无法被识别（Windows）
 
-**确认操作系统环境**
+#### 确认操作系统环境
 
 我们推荐使用 Windows 10 操作系统，更老的 Windows 也许可以，但会增加不必要的麻烦。有两个办法可以解决。
 
-**升级 PowerShell 版本（推荐）**
+#### 升级 PowerShell 版本（推荐）
 
 PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的主要命令行界面。以下操作继续在上面打开的命令行界面进行：
 
@@ -83,7 +83,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 - [.NET Framework 4.5 or later](https://www.microsoft.com/net/download)
 - [Windows Management Framework 5.x](https://aka.ms/wmf5download)
 
-**手动安装配置（简单）**
+#### 手动安装配置（简单）
 
 > 注意：手动安装后 `tuya-panel-cli upgrade` 命令是无法使用的，所以还是推荐第一种办法。
 
