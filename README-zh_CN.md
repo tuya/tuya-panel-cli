@@ -47,6 +47,21 @@ tuya-panel-cli upgrade
 brew install youngjuning/tap/tuya-panel-cli
 ```
 
+## Mac/Linux 手动安装
+
+1、 在 [Release 页面](<https://github.com/tuya/tuya-panel-cli/releases/latest>) 下载最新的安装包，解压到任意位置
+
+2、将下面的配置手动写入 `.zshrc`，注意将 TPC_INSTALL 换成脚本的安装位置。
+
+```sh
+export TPC_INSTALL="/Users/luozhu/.tuya-panel-cli"
+export PATH="$TPC_INSTALL/bin:$PATH"
+```
+
+3、修改后记得执行 `source ~/.zshrc`
+
+> 注意：使用 bash 的话配置文件是 `.bash_profile`
+
 ## 已知问题
 
 ### `unzip is required`
