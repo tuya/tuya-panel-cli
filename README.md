@@ -112,7 +112,7 @@ If the above command returns `5` or above, there is no problem, otherwise you ne
 
 Add the script installation directory, such as `C:\tuya-panel-cli` to the `Path` variable of user variables:
 
-![](https://images.tuyacn.com/fe-static/docs/img/7af7585a-d2bc-4ea6-9ac5-5f5073ac24a4.png)
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/20210730145322.png)
 
 4、Reopen the Powershell command line interface to get start
 
