@@ -114,7 +114,7 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 把可执行文件的安装目录，比如我们刚设置的 `C:\tuya-panel-cli` 添加到用户环境变量 `Path` 中：
 
-![](https://images.tuyacn.com/fe-static/docs/img/7af7585a-d2bc-4ea6-9ac5-5f5073ac24a4.png)
+![](https://cdn.jsdelivr.net/gh/youngjuning/images/20210730145322.png)
 
 4、重新打开 Powershell 命令行输入 `tuya-panel-cli --version` 验证
 
