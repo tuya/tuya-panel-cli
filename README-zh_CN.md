@@ -41,12 +41,6 @@ $v="1.0.0"; iwr https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.ps1 -use
 tuya-panel-cli upgrade
 ```
 
-## 通过 Homebrew 安装
-
-```sh
-brew install youngjuning/tap/tuya-panel-cli
-```
-
 ## Mac/Linux 手动安装
 
 1、 在 [Release 页面](<https://github.com/tuya/tuya-panel-cli/releases/latest>) 下载最新的安装包，解压到任意位置
