@@ -40,12 +40,6 @@ $v="1.0.0"; iwr https://cdn.jsdelivr.net/gh/tuya/tuya-panel-cli/install.ps1 -use
 tuya-panel-cli upgrade
 ```
 
-## Install via Homebrew
-
-```sh
-brew install youngjuning/tap/tuya-panel-cli
-```
-
 ## Mac/Linux Manual installation
 
 1、 Download the latest installation package from [Release page](<https://github.com/tuya/tuya-panel-cli/releases/latest>) and unzip it to any location
