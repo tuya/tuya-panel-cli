@@ -76,11 +76,11 @@ You can install unzip via `brew install unzip` on MacOS or `apt-get install unzi
 
 ### iwr cannot be recognized on Windows
 
-**Confirm operating system environment**
+#### Confirm operating system environment
 
 We recommend using the Windows 10 operating system. Older Windows may work, but it will increase unnecessary trouble.
 
-**upgrade PowerShell version(Recommend)**
+#### upgrade PowerShell version(Recommend)
 
 PowerShell is an enhanced command line environment under Windows and the main command line interface we will use in the future. The following operations continue on the command line interface opened above:
 
@@ -91,7 +91,7 @@ If the above command returns `5` or above, there is no problem, otherwise you ne
 - [.NET Framework 4.5 or later](https://www.microsoft.com/net/download)
 - [Windows Management Framework 5.x](https://aka.ms/wmf5download)
 
-**Manual installation(Easy)**
+#### Manual installation(Easy)
 
 > Manual installation cannot use the `tuya-panel-cli upgrade` command.
 
