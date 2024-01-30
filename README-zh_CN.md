@@ -98,8 +98,6 @@ PowerShell 是 Windows 下的增强命令行环境，也是我们以后要用的
 
 1、在 [tuya-panel-cli/releases/latest](https://github.com/tuya/tuya-panel-cli/releases/latest) 界面安装最新的可执行文件压缩包 `tuya-panel-cli-x86_64-pc-windows-msvc.zip`
 
-![](https://images.tuyacn.com/fe-static/docs/img/aff7b378-c024-4358-9ca7-d3616df24890.png)
-
 2、解压到任意位置，比如 `C:\tuya-panel-cli` 目录下
 
 ![](https://images.tuyacn.com/fe-static/docs/img/56b1bd45-ea79-4bca-8e64-0f6fbae645fa.png)
